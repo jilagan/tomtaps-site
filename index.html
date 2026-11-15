@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tom Taps – AAC Board · Give every child a voice</title>
-<meta name="description" content="Tom Taps is a picture-based AAC app built with speech-language pathologists — and by a father for his non-speaking son. Free to start, Pro is a one-time $29.99, no subscriptions ever.">
+<title>Tom Taps – AAC Board in English, Filipino and Spanish</title>
+<meta name="description" content="Tom Taps is a picture board (AAC) for children who don't speak. It speaks English, Filipino and Spanish. Free to start. Pro is $29.99, paid once, with no subscription.">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <meta property="og:title" content="Tom Taps – AAC Board">
-<meta property="og:description" content="A picture-based communication app that gives non-speaking children a voice. Free to start · Pro $29.99 once · no subscriptions.">
+<meta property="og:description" content="A picture board that speaks English, Filipino and Spanish for children who don't speak. Free to start. Pro is $29.99, paid once.">
 <meta property="og:image" content="assets/icon.png">
 <meta property="og:type" content="website">
 <style>
@@ -60,10 +60,14 @@
   /* Feature grid */
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:28px}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
-  .card .ic{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font-size:20px;margin-bottom:12px;
-    background:color-mix(in srgb,var(--brand) 15%,transparent)}
   .card h3{margin:0 0 6px;font-size:1.08rem}
   .card p{margin:0;color:var(--muted);font-size:.95rem}
+
+  /* Screens */
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+  .shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);display:block}
+  @media (max-width:640px){.shots{grid-template-columns:1fr 1fr}.shots img:last-child{display:none}}
+  .card .tag{font-size:.72rem;font-weight:700;color:var(--brand-ink);margin-left:6px}
 
   /* Pricing */
   .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
@@ -92,8 +96,8 @@
   <div class="wrap">
     <img class="logo" src="assets/icon.png" alt="Tom Taps app icon">
     <h1>Give every child a voice.</h1>
-    <p>Tom Taps is a picture-based communication board (AAC) for children and non-speaking individuals — built with speech-language pathologists.</p>
-    <p class="price-note">Free to start · Tom Taps Pro is a one-time <b>$29.99</b> · no subscriptions, ever.</p>
+    <p>Tom Taps is a picture board for children who don't speak, or don't speak yet. Your child taps pictures to build a sentence, and Tom Taps says it out loud in English, Filipino or Spanish.</p>
+    <p class="price-note">Free to start. Tom Taps Pro is <b>$29.99</b>, paid once. No subscription.</p>
     <a class="cta" href="https://apps.apple.com/app/id6760241580" aria-label="Download Tom Taps on the App Store">
       <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
       <span class="big">Download on the<br><small>App Store</small></span>
@@ -103,50 +107,62 @@
 
 <section class="story">
   <div class="wrap">
-    <blockquote>“I built Tom Taps for my son, Tom, so he could tell us what he needs, thinks, and feels.”</blockquote>
-    <p class="who">Tom is non-speaking. What began as one father's project — made alongside Tom's speech-language pathologist — is now a full communication tool shared with every family walking the same path.</p>
+    <blockquote>“I built Tom Taps for my son, Tom, so he could tell us what he needs, thinks and feels.”</blockquote>
+    <p class="who">Tom doesn't speak. Tom Taps started in 2014 as one father's project, made with Tom's speech-language pathologist. Now any family can use it.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>What it looks like</h2>
+  <div class="shots">
+    <img src="assets/shot1.jpg" alt="Building the sentence I want apple on Tom Taps" loading="lazy">
+    <img src="assets/shot2.jpg" alt="The core word grid, where words never move" loading="lazy">
+    <img src="assets/shot3.jpg" alt="Folders of picture cards for toys, food and places" loading="lazy">
   </div>
 </section>
 
 <section class="wrap">
   <h2>Why families and therapists choose Tom Taps</h2>
-  <p class="lede">Designed around how children actually learn to communicate — not around a subscription.</p>
+  <p class="lede">Built around how children learn to communicate.</p>
   <div class="grid">
-    <div class="card"><div class="ic">📍</div><h3>Words stay put</h3><p>Fixed grid positions build motor memory. Buttons never rearrange themselves, so a child learns where each word lives.</p></div>
-    <div class="card"><div class="ic">🔒</div><h3>Private AI Coach</h3><p>Weekly coaching insights from your child's communication — analysed entirely on your device. Nothing leaves the phone. (Pro)</p></div>
-    <div class="card"><div class="ic">🎨</div><h3>Fitzgerald Key colours</h3><p>Consistent colour-coding by word type, the standard clinicians already use, for fast and reliable recognition.</p></div>
-    <div class="card"><div class="ic">📤</div><h3>Yours to keep</h3><p>Open OBF/OBZ vocabulary format — your boards are portable and never locked to one vendor.</p></div>
-    <div class="card"><div class="ic">⚡</div><h3>Works on day one</h3><p>A complete core vocabulary out of the box. No lengthy setup, no SLP configuration required to begin.</p></div>
-    <div class="card"><div class="ic">🗣️</div><h3>Model &amp; build</h3><p>Aided Language Stimulation mode for caregivers, plus a sentence composer with clear text-to-speech.</p></div>
+    <div class="card"><h3>Words stay in place</h3><p>Core words like I, want, more, help and stop never move. Your child learns where each word is by habit, the way you learn a keyboard.</p></div>
+    <div class="card"><h3>English, Filipino and Spanish</h3><p>Each board has its own language. Switch a board to Filipino or Spanish and every word keeps its spot. A bilingual family can keep one board in each language. Filipino is in beta.</p></div>
+    <div class="card"><h3>Progress report <span class="tag">PRO</span></h3><p>A PDF you can send to your speech therapist or school: words used, new words, core words used and days of use.</p></div>
+    <div class="card"><h3>Private coach <span class="tag">PRO</span></h3><p>Weekly suggestions based on how your child communicates. It runs on your device and sends nothing to us.</p></div>
+    <div class="card"><h3>Fitzgerald Key colours</h3><p>Word types use the colour code therapists already use.</p></div>
+    <div class="card"><h3>Yours to keep</h3><p>Boards are saved in the open OBF format, so you can take them to another app.</p></div>
+    <div class="card"><h3>Works on day one</h3><p>A full core vocabulary comes ready. No setup is needed before your child can start.</p></div>
+    <div class="card"><h3>Model and build</h3><p>A modelling mode lets you show words without changing your child's sentence.</p></div>
   </div>
 </section>
 
 <section class="wrap" id="pricing">
-  <h2>Honest, one-time pricing</h2>
-  <p class="lede">Comparable AAC apps cost $150–$250 or lock you into a subscription. Tom Taps never will.</p>
+  <h2>One-time pricing</h2>
+  <p class="lede">Other AAC apps cost $100 to $300, or charge a subscription. Tom Taps doesn't.</p>
   <div class="tiers">
     <div class="tier">
       <span class="badge" style="visibility:hidden">Free</span>
       <h3>Free</h3>
       <div class="amt">$0</div>
-      <ul><li>Full core vocabulary</li><li>Text-to-speech</li><li>Custom cards &amp; boards</li><li>Backup &amp; restore</li></ul>
+      <ul><li>Core word grid and hundreds of picture cards</li><li>English, Filipino and Spanish</li><li>Your own cards, photos and voice recordings</li><li>A separate board for each child</li><li>Backup and restore</li></ul>
     </div>
     <div class="tier feat">
       <span class="badge">Best value</span>
       <h3>Tom Taps Pro</h3>
       <div class="amt">$29.99 <span>once</span></div>
-      <ul><li>All six vocabulary packs</li><li>Private on-device AI Coach</li><li>iCloud sync across devices</li><li>No subscription, ever</li></ul>
+      <ul><li>About 900 more words in 25 folders</li><li>All six vocabulary packs</li><li>Progress report for your therapist</li><li>Private on-device coach</li><li>No subscription</li></ul>
     </div>
     <div class="tier">
       <span class="badge" style="visibility:hidden">Packs</span>
       <h3>Vocabulary Packs</h3>
       <div class="amt">$1.99<span>–$3.99 each</span></div>
-      <ul><li>Medical &amp; Health</li><li>School &amp; Learning</li><li>Feelings, Food, Play</li><li>Community &amp; Social</li></ul>
+      <ul><li>Medical and health</li><li>School and learning</li><li>Feelings, food and play</li><li>Community and social</li></ul>
     </div>
   </div>
   <p class="center mt8"><a class="cta" href="https://apps.apple.com/app/id6760241580" aria-label="Download Tom Taps on the App Store">
-    <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-    <span class="big">Download on the<br><small>App Store</small></span></a></p>
+      <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+      <span class="big">Download on the<br><small>App Store</small></span>
+    </a></p>
 </section>
 
 <footer>
@@ -154,7 +170,7 @@
     <div class="cols">
       <div class="attr">
         <strong>Tom Taps – AAC Board</strong><br>
-        Symbols from the <a href="https://mulberrysymbols.org">Mulberry Symbol Set</a> — © Garry Jewell / Straight Street and contributors, licensed CC BY-SA 4.0.
+        Symbols from the <a href="https://mulberrysymbols.org">Mulberry Symbol Set</a>, © Garry Paxton / Straight Street, Steve Lee and contributors, licensed CC BY-SA 4.0.
       </div>
       <div>
         <a href="mailto:support@tomtaps.com">support@tomtaps.com</a><br>
@@ -162,7 +178,7 @@
         <a href="https://apps.apple.com/app/id6760241580">App Store</a>
       </div>
     </div>
-    <p class="mt8">© 2026 Archmob Pte Ltd. Made with care for Tom — and every child finding their voice.</p>
+    <p class="mt8">© 2026 Archmob Pte Ltd. Made for Tom and every child finding their voice.</p>
   </div>
 </footer>
 
