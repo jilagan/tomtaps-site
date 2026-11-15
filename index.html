@@ -34,10 +34,16 @@
   h2{font-size:clamp(1.5rem,3.5vw,2.1rem);margin:0 0 8px}
   .lede{color:var(--muted);font-size:1.05rem;max-width:46ch}
 
+  /* Top bar */
+  .topbar{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:700;font-size:1.1rem;letter-spacing:-.01em}
+  .brand img{width:34px;height:34px;border-radius:8px}
+  .topbar .get{font-weight:600;font-size:.95rem;padding:8px 14px;border-radius:10px;background:var(--ink);color:var(--bg)}
   /* Hero */
-  .hero{text-align:center;padding:72px 0 40px;background:
+  .hero{text-align:center;padding:56px 0 40px;background:
      radial-gradient(1200px 400px at 50% -120px, color-mix(in srgb,var(--brand) 16%,transparent), transparent);}
-  .hero img.logo{width:112px;height:112px;border-radius:26px;box-shadow:var(--shadow);margin-bottom:22px}
   .hero h1{font-size:clamp(2rem,6vw,3.1rem);margin:0 0 14px}
   .hero p{color:var(--muted);font-size:1.15rem;max-width:34ch;margin:0 auto 12px}
   .price-note{font-weight:600;color:var(--ink);font-size:1rem}
@@ -97,9 +103,14 @@
 </head>
 <body>
 
+<nav class="topbar" aria-label="Site">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="assets/icon.png" alt="">Tom Taps</a>
+    <a class="get" href="https://apps.apple.com/app/id6760241580">Download</a>
+  </div>
+</nav>
 <header class="hero">
   <div class="wrap">
-    <img class="logo" src="assets/icon.png" alt="Tom Taps app icon">
     <h1>Give every child a voice.</h1>
     <p>Tom Taps is a picture board for children who don't speak, or don't speak yet. Your child taps pictures to build a sentence, and Tom Taps says it out loud in English, Filipino or Spanish.</p>
     <p class="price-note">For iPhone, iPad and Mac. Free to start. Tom Taps Pro is <b>$29.99</b>, paid once. No subscription.</p>
