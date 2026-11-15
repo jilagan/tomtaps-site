@@ -67,6 +67,11 @@
   .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
   .shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);display:block}
   @media (max-width:640px){.shots{grid-template-columns:1fr 1fr}.shots img:last-child{display:none}}
+  .card.guide{padding:0;overflow:hidden;display:block}
+  .card.guide img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+  .card.guide h3,.card.guide p{padding:0 22px}
+  .card.guide h3{margin-top:16px}
+  .card.guide p{padding-bottom:20px}
   .card .tag{font-size:.72rem;font-weight:700;color:var(--brand-ink);margin-left:6px}
 
   /* Pricing */
@@ -141,8 +146,8 @@
   <h2>Guides</h2>
   <p class="lede">Short guides for parents, teachers and speech therapists.</p>
   <div class="grid">
-    <a class="card" href="guides/first-week.html"><h3>Your first week with Tom Taps</h3><p>Learn the core words, model words while you talk, and plan two or three daily routines.</p></a>
-    <a class="card" href="guides/routines.html"><h3>What to model at snack, bath and play</h3><p>Phrases for each routine, using the core words that never move.</p></a>
+    <a class="card guide" href="guides/first-week.html"><img src="assets/guides/first-week.jpg" alt="Video: Your first week with Tom Taps" loading="lazy"><h3>Your first week with Tom Taps</h3><p>Learn the core words, model words while you talk, and plan two or three daily routines.</p></a>
+    <a class="card guide" href="guides/routines.html"><img src="assets/guides/routines.jpg" alt="Video: What to model at snack, bath and play" loading="lazy"><h3>What to model at snack, bath and play</h3><p>Phrases for each routine, using the core words that never move.</p></a>
   </div>
 </section>
 
