@@ -27,5 +27,6 @@ The domain's DNS is on **AWS Route 53** (in the site owner's AWS account); the o
 Until step 1–2 are done, the site is live only at the `github.io` URL above; tomtaps.com still shows the old WordPress site.
 
 ## Notes
-- Support email `support@tomtaps.com` is referenced in the footer and privacy page — create that alias in Google Workspace (the domain's MX is Google) or change it.
+- Support email `support@tomtaps.com` is referenced in the footer, the privacy page and the YouTube channel. It is live and delivers to joben@archmob.com (tested Oct 24, 2026).
+- YouTube channel: https://www.youtube.com/@TomTapsAAC (Brand Account under joben.ilagan@gmail.com). `@TomTaps` belongs to an unrelated gaming channel.
 - Symbols credit: Mulberry Symbol Set (CC BY-SA 4.0), already attributed in the footer and in-app.
